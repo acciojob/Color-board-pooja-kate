@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	background-color:black;
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(20,40px);
+    grid-template-rows: repeat(40, 40px);
+    gap: 0px;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    transition: background-color 1s;
+}
+
+.box:hover {
+    background-color: red;
+}
